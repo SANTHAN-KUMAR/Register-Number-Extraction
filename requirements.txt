@@ -1,0 +1,7 @@
+pytesseract
+opencv-python
+albumentations
+pdf2image
+easyocr
+matplotlib
+numpy
