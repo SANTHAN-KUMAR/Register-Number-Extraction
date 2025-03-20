@@ -1,2 +1,2 @@
 # Register-Number-Extraction
-# Accuracy acheived : 58.8%
+# Accuracy achieved : 58.8%
