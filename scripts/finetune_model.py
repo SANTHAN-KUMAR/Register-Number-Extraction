@@ -25,7 +25,7 @@ if __name__ == "__main__":
             '--traineddata', '/usr/local/share/tessdata/eng.traineddata',
             '--train_listfile', 'data/train_preprocessed/train_files.txt',
             '--eval_listfile', 'data/val_preprocessed/val_files.txt',
-            '--max_iterations', '2000'
+            '--max_iterations', '5000'
         ], check=True, capture_output=True, text=True)
         print("Fine-tuning completed successfully.")
         print(result.stdout)
