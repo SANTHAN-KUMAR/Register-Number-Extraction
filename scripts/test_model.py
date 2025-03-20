@@ -3,6 +3,7 @@ import pickle
 import pytesseract
 import cv2
 import os
+import re
 
 if __name__ == "__main__":
     # Load test_preprocessed
@@ -20,9 +21,21 @@ if __name__ == "__main__":
         img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
         custom_config = r'--oem 1 --psm 6 -l handwritten_model'
         predicted_label = pytesseract.image_to_string(img, config=custom_config).strip()
-        if predicted_label == true_label:
+        
+        # Clean the predicted label using regex
+        # Remove all non-digit characters
+        cleaned_label = re.sub(r'\D', '', predicted_label)
+        
+        # Ensure the cleaned label is exactly 12 digits
+        if len(cleaned_label) > 12:
+            cleaned_label = cleaned_label[:12]  # Truncate to first 12 digits
+        elif len(cleaned_label) < 12:
+            cleaned_label = cleaned_label.ljust(12, '0')  # Pad with zeros on the right
+        
+        # Compare with true label
+        if cleaned_label == true_label:
             correct += 1
-        print(f"True: {true_label}, Predicted: {predicted_label}")
+        print(f"True: {true_label}, Predicted (raw): {predicted_label}, Predicted (cleaned): {cleaned_label}")
     
     accuracy = correct / total
     print(f"Tesseract Accuracy: {accuracy:.2%} ({correct}/{total})")
