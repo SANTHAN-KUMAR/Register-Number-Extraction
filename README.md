@@ -2,6 +2,6 @@
 ### Accuracy achieved : 58.88% ( on 1000 iterations )
 ### improved accuracy : 64.11% ( with 2000 iterations )
 ### updated accuracy : 78.88% ( with 5000 iterations and applied regex for test predictions )
-#### [ NOTE : Running the training everytime gives variable accuracy with +-2 variation ]
+#### [ NOTE : Running the training everytime gives variable accuracy with (+-)1 variation in the score]
 
 ### Note : Increasing the iterations is no more reflecting in positive accuracy score, the model seems to be overfitting.
