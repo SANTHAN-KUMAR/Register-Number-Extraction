@@ -8,3 +8,9 @@
 
 ## CUSTOM MODEL'S ACCURACY : 95.14% (without data augmentation)
 ### it achieved 92% with data augmentation
+
+## Best models to be considered in :
+
+CRNN with just dropout.ipynb
+
+deep CRNN TEMP (with data augmentation).ipynb
