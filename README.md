@@ -5,3 +5,6 @@
 #### [ NOTE : Running the training everytime gives variable accuracy with (+-)1 variation in the score]
 
 ### Note : Increasing the iterations is no more reflecting in positive accuracy score, the model seems to be overfitting.
+
+## CUSTOM MODEL'S ACCURACY : 95.14% (without data augmentation)
+### it achieved 92% with data augmentation
