@@ -7,7 +7,7 @@
 ### Note : Increasing the iterations is no more reflecting in positive accuracy score, the model seems to be overfitting.
 
 ## CUSTOM MODEL'S ACCURACY : 95.14% (without data augmentation)
-### it achieved 92% with data augmentation
+### it achieved 92%->93% with data augmentation and increased epochs (5)
 
 ## Best models to be considered in :
 
