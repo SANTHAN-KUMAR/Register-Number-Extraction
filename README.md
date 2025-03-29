@@ -1,28 +1,47 @@
-# Register-Number-Extraction
-### Accuracy achieved : 58.88% ( on 1000 iterations )
-### improved accuracy : 64.11% ( with 2000 iterations )
-### updated accuracy : 78.88% ( with 5000 iterations and applied regex for test predictions )
-#### [ NOTE : Running the training everytime gives variable accuracy with (+-)1 variation in the score]
+# Register Number Extraction
 
-### Note : Increasing the iterations is no more reflecting in positive accuracy score, the model seems to be overfitting.
+## 1. Tesseract OCR Experiments
 
-## CUSTOM MODEL'S ACCURACY : 95.14% (without data augmentation)
-### it achieved 93% with data augmentation and increased epochs (5)
+This section details the results obtained using Tesseract OCR for register number extraction.
 
-## Best models to be considered in :
+**Initial Accuracy:** 58.88% (on 1000 iterations)
 
-CRNN with just dropout.ipynb
+**Accuracy Improvements:**
 
-deep CRNN TEMP (with data augmentation).ipynb
+* **Increased Iterations (2000):** Accuracy improved to 64.11%.
+* **Increased Iterations (5000) and Regex Application:** Accuracy further improved to 78.88% (regex was applied to the test predictions).
 
+**Important Notes on Tesseract Experiments:**
 
-### deep CRNN TEMP (with data augmentation).ipynb
-when this was trained on 70 epochs, the accuracy was around 91 and the predictions were mediocre.
-after increasing the epochs to 75, the accuracy was around 92.9 and the predictions were pretty good.
- #### ( TRY TO SAVE THIS MODEL COMPLETELY )
-previosuly there were some issues in saving and loading this model.
+* **Accuracy Variability:** Running the training multiple times resulted in variable accuracy, with a fluctuation of approximately (+-) 1%.
+* **Overfitting:** Increasing the number of iterations beyond 5000 did not lead to further positive improvements in accuracy, suggesting potential overfitting of the Tesseract model to the training data.
 
-increasing the epochs to 80 resulted in 94% accuracy, but the predictions are bad.
+## 2. Custom Model Experiments
+
+This section outlines the results achieved with custom-trained models for register number extraction.
+
+**Initial Custom Model Accuracy (without Data Augmentation):** 95.14%
+
+**Impact of Data Augmentation and Increased Epochs:**
+
+* Applying data augmentation and increasing the number of training epochs to 5 resulted in an accuracy of 93%.
+
+**Detailed Experiment with "deep CRNN TEMP (with data augmentation).ipynb":**
+
+* **70 Epochs:** Achieved an accuracy of approximately 91%, with mediocre prediction quality.
+* **75 Epochs:** Increased the accuracy to around 92.9%, and the prediction quality was observed to be significantly better.
+* **80 Epochs:** Resulted in a higher accuracy of 94%, but the prediction quality deteriorated, indicating potential overfitting.
+
+**Note on Model Saving and Loading:**
+
+* Previously, there were issues encountered while saving and loading the trained models. Efforts should be made to ensure the complete and reliable saving of the best-performing model.
+
+## 3. Best Models to Consider
+
+Based on the experiments, the following model notebooks appear to be the most promising and should be considered for further development or deployment:
+
+* CRNN with just dropout.ipynb
+* deep CRNN TEMP (with data augmentation).ipynb
 
 
 # Setting up the project on your PC :
