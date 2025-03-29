@@ -1,7 +1,4 @@
-pytesseract
-opencv-python
-albumentations
-pdf2image
-easyocr
-matplotlib
-numpy
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+numpy==1.24.3
+pillow==9.5.0
