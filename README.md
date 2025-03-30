@@ -87,7 +87,8 @@ env\Scripts\activate
 ### 4. Install the Tools
 This project needs some Python libraries. Pick the option below based on your setup:
 
-Option A: Regular Computer (CPU)
+### Option A: Regular Computer (CPU)
+
 If you don’t have an NVIDIA GPU or just want to keep it simple:
 
 1. Run :
@@ -109,7 +110,9 @@ PyTorch version: 2.5.1
 GPU available? False
 ```
 
-Option B: NVIDIA GPU (Faster Setup)
+
+
+### Option B: NVIDIA GPU (Faster Setup)
 If you have an NVIDIA GPU with CUDA 12.1 (like the RTX Series):
 
 1. Check your CUDA version:
