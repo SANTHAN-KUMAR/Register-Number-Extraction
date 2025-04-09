@@ -1,5 +1,9 @@
 # Register Number Extraction
 
+## To test the project, follow this link : 
+
+https://colab.research.google.com/drive/1TRqyKe7JmP0dOh4_ijVkAqoEycNRgFWP?usp=sharing
+
 ## 1. Tesseract OCR Experiments
 
 This section details the results obtained using Tesseract OCR for register number extraction.
