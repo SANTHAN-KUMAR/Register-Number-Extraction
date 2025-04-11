@@ -185,3 +185,5 @@ jupyter notebook
 - ### Cell 4: Trains it and saves the best version to saved_models/.
 - ### Cell 5: Tests accuracy on some images.
 - ### Cell 6: Predicts a number from one image (e.g., test_reg.jpeg).
+
+## To take part of this project, fork this repository and give a pull request with your changes! Have a look at the issues mentioned, it is a great way to contribute to this project by solving them!
