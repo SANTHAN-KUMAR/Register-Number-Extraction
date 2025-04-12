@@ -2,6 +2,7 @@
 # 📌 Region Detection Phase
 
 This repository contains code and resources for **region detection tasks**, focusing on identifying specific areas (e.g., text regions like **register numbers** and **subject codes**) in images. It uses a blend of traditional techniques and deep learning, including a **custom YOLOv5 model**.
+# Dataset : https://www.kaggle.com/datasets/kavinraja1612/register-number-images-and-their-yolo-labels
 
 ---
 
@@ -107,7 +108,7 @@ Use `kagglehub` to download:
 ```python
 import kagglehub
 
-path = kagglehub.dataset_download("kavinraja1612/register-number-images-and-their-yolo-labels")
+path = kagglehub.dataset_download("https://www.kaggle.com/datasets/kavinraja1612/register-number-images-and-their-yolo-labels")
 print("Path to dataset files:", path)
 ```
 
