@@ -1,5 +1,5 @@
 
-# 📌 Region Detection Project
+# 📌 Region Detection Phase
 
 This repository contains code and resources for **region detection tasks**, focusing on identifying specific areas (e.g., text regions like **register numbers** and **subject codes**) in images. It uses a blend of traditional techniques and deep learning, including a **custom YOLOv5 model**.
 
