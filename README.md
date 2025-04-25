@@ -1,5 +1,12 @@
 # Register Number Extraction
 
+### run the script.py with this command :
+
+```bash
+
+python script.py --image "rs_test3.png" --yolo_weights "weights.pt" --crnn_model "best_crnn_model(git).pth"
+```
+
 ## To test the project, follow this link : 
 
 https://colab.research.google.com/drive/1TRqyKe7JmP0dOh4_ijVkAqoEycNRgFWP?usp=sharing
