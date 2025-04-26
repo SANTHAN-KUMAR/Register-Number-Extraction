@@ -9,17 +9,17 @@ WORKDIR /app
 
 # Copy the requirements file and install dependencies
 # Use --no-cache-dir to avoid storing cache data, reducing image size
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+#COPY requirements.txt .
+#RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your script, YOLO weights, and CRNN model into the container
-COPY script.py .
-COPY weights.pt .
-COPY best_crnn_model.pth .
+#COPY script.py .
+#COPY weights.pt .
+#COPY best_crnn_model.pth .
 
 # Create directories for output. This matches the paths in your script.
 # You might want to mount volumes for these later if you need persistence.
-RUN mkdir -p cropped_register_numbers cropped_subject_codes results
+#RUN mkdir -p cropped_register_numbers cropped_subject_codes results
 
 # Define the default command to run your script
 # This allows you to pass arguments when you run the container,
