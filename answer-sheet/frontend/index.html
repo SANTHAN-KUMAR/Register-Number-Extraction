@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer Sheet Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Saveetha Engineering College" class="display-image">
+        <h1>Answer Sheet Processor</h1>
+
+        <div class="buttons">
+            <button id="uploadPdfBtn">Upload PDF</button>
+            <button id="useCameraBtn">Use Camera</button>
+        </div>
+
+        <div id="uploadSection" class="hidden">
+            <input type="file" id="pdfInput" accept="application/pdf,image/*">
+        </div>
+
+        <div id="cameraSection" class="hidden">
+            <video id="video" autoplay></video>
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="captureBtn">Capture</button>
+            </div>
+            <canvas id="canvas" class="hidden"></canvas>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Results:</h2>
+            <p id="registerNumber">Register Number: </p>
+            <p id="subjectCode">Subject Code: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
