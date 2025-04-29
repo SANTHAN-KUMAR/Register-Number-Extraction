@@ -1,5 +1,0 @@
-Pillow
-matplotlib
-ultralytics
-opencv-python
-numpy
