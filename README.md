@@ -127,8 +127,6 @@ PyTorch version: 2.5.1
 GPU available? False
 ```
 
-
-
 ### Option B: NVIDIA GPU (Faster Setup)
 If you have an NVIDIA GPU with CUDA 12.1 (like the RTX Series):
 
@@ -176,6 +174,7 @@ Find your version at PyTorch’s site.
 jupyter notebook
 ```
 
+## Instead build a docker image from source using the dockerfile given in the repo.
 #### A browser window will open.
 
 #### Open the .ipynb file (deep CRNN TEMP (with data augmentation)-updated.ipynb).
@@ -189,7 +188,6 @@ jupyter notebook
 #### Tests it and predicts numbers from images.
 
 #### The code picks CPU or GPU automatically, so no changes needed!
-
 
 ### What’s in the Project:
 
